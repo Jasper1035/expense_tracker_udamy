@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:project3/expenses.dart';
+import 'package:project3/widgets/expenses.dart';
 
 void main() {
-  runApp(const MaterialApp(home: Expenses()));
+  runApp(
+    const MaterialApp(debugShowCheckedModeBanner: false, home: Expenses()),
+  );
 }

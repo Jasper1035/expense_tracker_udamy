@@ -15,7 +15,17 @@ void main() {
           backgroundColor: Colors.black,
           foregroundColor: Colors.red,
         ),
+        cardTheme: const CardThemeData().copyWith(
+          color: kColorScheme.secondaryContainer,
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kColorScheme.primaryContainer,
+          ),
+        ),
       ),
+
       debugShowCheckedModeBanner: false,
       home: const Expenses(),
     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project3/widgets/chart/chart.dart';
 import 'package:project3/widgets/expenses_list/expenses_list.dart';
 import 'package:project3/model/expense.dart';
 import 'package:project3/widgets/new_expense.dart';
@@ -34,7 +35,7 @@ class _ExpensesState extends State<Expenses> {
     ),
     Expense(
       title: 'Car',
-      amount: 1000,
+      amount: 25,
       date: DateTime.now(),
       category: Category.travel,
     ),
@@ -101,7 +102,7 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          const Text('The Chart'),
+          Chart(expenses: _registeredExpenses),
           Expanded(child: mainContent),
         ],
       ),

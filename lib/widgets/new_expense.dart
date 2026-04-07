@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:project3/model/expense.dart';
 
@@ -44,6 +46,15 @@ class _NewExpenseState extends State<NewExpense> {
     _amountController.dispose();
     super.dispose();
   }
+
+  // void (showDailog){
+  //   if(Platform.isIOS){
+  //     /// for ios widget tree code here ios cupertino widgets
+  //   }
+  //   else {
+  //     //// for android widget tree or android code here
+  //   }
+  // }
 
   void _submitExpenseDate() {
     final enteredAmount = double.tryParse(
